@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 10,
+    "active_layer": 6,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -125,6 +125,10 @@
       105,
       71,
       91,
+      91,
+      91,
+      91,
+      91,
       91
     ],
     "custom_group_rules": [],
@@ -151,7 +155,7 @@
       "graphics": true,
       "images": true,
       "labels": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pins": true,
       "ruleAreas": true,

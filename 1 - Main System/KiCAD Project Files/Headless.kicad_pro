@@ -739,7 +739,7 @@
         {
           "gap": 0.127,
           "via_gap": 0.127,
-          "width": 0.186
+          "width": 0.1357
         },
         {
           "gap": 0.5,
@@ -897,6 +897,7 @@
       "track_widths": [
         0.0,
         0.127,
+        0.1859,
         0.2,
         0.224,
         0.5
@@ -921,10 +922,10 @@
         "single_track_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 0.448,
-          "min_amplitude": 0.112,
+          "max_amplitude": 0.5,
+          "min_amplitude": 0.127,
           "single_sided": false,
-          "spacing": 0.448
+          "spacing": 0.254
         }
       },
       "via_dimensions": [
@@ -1237,14 +1238,14 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.224,
+        "clearance": 0.127,
         "diff_pair_gap": 0.127,
-        "diff_pair_width": 0.186,
+        "diff_pair_width": 0.1357,
         "name": "DFRAM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.224,
+        "track_width": 0.186,
         "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.3
@@ -1264,14 +1265,14 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.224,
+        "clearance": 0.127,
         "diff_pair_gap": 0.127,
-        "diff_pair_width": 0.186,
+        "diff_pair_width": 0.1357,
         "name": "SERAM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.224,
+        "track_width": 0.186,
         "tuning_profile": "SERAM",
         "via_diameter": 0.5,
         "via_drill": 0.3
@@ -1292,49 +1293,49 @@
     "net_colors": {},
     "netclass_assignments": {
       "/FPGA/FPGA DDR/DDR_A0": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A1": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A10": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A11": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A12": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A13": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A14": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A2": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A3": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A4": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A5": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A6": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A7": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A8": [
-        "RAM"
+        "SERAM"
       ],
       "/FPGA/FPGA DDR/DDR_A9": [
-        "RAM"
+        "SERAM"
       ],
       "/Module Monitoring/I3_M1": [
         "ADC_LN"
@@ -1361,100 +1362,100 @@
         "ADC_LN"
       ],
       "Net-(IC8-DQL0)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL1)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL2)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL3)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL4)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL5)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL6)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQL7)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU0)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU1)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU2)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU3)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU4)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU5)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU6)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC8-DQU7)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL0)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL1)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL2)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL3)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL4)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL5)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL6)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQL7)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU0)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU1)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU2)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU3)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU4)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU5)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU6)": [
-        "RAM"
+        "SERAM"
       ],
       "Net-(IC9-DQU7)": [
-        "RAM"
+        "SERAM"
       ]
     },
     "netclass_patterns": []
@@ -1620,7 +1621,7 @@
         "uuid": "dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
       }
     ],
-    "used_designators": "#PWR1-426,#PWR433-463,BT1,C1-236,C240-259,D1-44,D48-67,FB1,IC1-9,J1-18,JP1-5,L1-21,Q1-12,R1-114,R117-120,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,Y1-2",
+    "used_designators": "#PWR1-426,#PWR433-471,BT1,C1-236,C240-259,D1-44,D48-67,FB1,IC1-9,J1-18,JP1-5,L1-21,Q1-12,R1-114,R117-124,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,Y1-2",
     "variants": []
   },
   "sheets": [

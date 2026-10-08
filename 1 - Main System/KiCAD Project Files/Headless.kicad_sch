@@ -1113,7 +1113,7 @@
 	)
 	(sheet
 		(at 107.95 129.54)
-		(size 39.37 24.13)
+		(size 39.37 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1139,7 +1139,7 @@
 			)
 		)
 		(property "Sheetfile" "fpga_zynq.kicad_sch"
-			(at 107.95 154.2546 0)
+			(at 107.95 155.5246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2472,7 +2472,7 @@
 	)
 	(sheet
 		(at 68.58 129.54)
-		(size 19.05 17.78)
+		(size 19.05 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2498,7 +2498,7 @@
 			)
 		)
 		(property "Sheetfile" "fpgapowdistro.kicad_sch"
-			(at 68.58 147.9046 0)
+			(at 68.58 155.5246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2561,6 +2561,26 @@
 		(pin "FPGA_PG" output
 			(at 87.63 132.08 0)
 			(uuid "8b233387-b3a1-4238-ab87-5a697b2b237d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+0V674_REF" output
+			(at 87.63 149.86 0)
+			(uuid "66b23fa0-70d8-4a4f-8bbb-6a2171f4f5fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+0V674" output
+			(at 87.63 152.4 0)
+			(uuid "07a1e110-ac71-40ff-b7c9-9c334aff6949")
 			(effects
 				(font
 					(size 1.27 1.27)
