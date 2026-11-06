@@ -739,7 +739,7 @@
         {
           "gap": 0.127,
           "via_gap": 0.127,
-          "width": 0.1357
+          "width": 0.186
         },
         {
           "gap": 0.5,
@@ -828,7 +828,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.127,
+        "min_clearance": 0.1016,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.127,
         "min_groove_width": 0.0,
@@ -897,7 +897,6 @@
       "track_widths": [
         0.0,
         0.127,
-        0.1859,
         0.2,
         0.224,
         0.5
@@ -922,10 +921,10 @@
         "single_track_defaults": {
           "corner_radius_percentage": 80,
           "corner_style": 1,
-          "max_amplitude": 0.5,
-          "min_amplitude": 0.127,
+          "max_amplitude": 0.448,
+          "min_amplitude": 0.112,
           "single_sided": false,
-          "spacing": 0.254
+          "spacing": 0.448
         }
       },
       "via_dimensions": [
@@ -934,12 +933,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4572,
-          "drill": 0.254
+          "diameter": 0.4064,
+          "drill": 0.2032
         },
         {
-          "diameter": 0.5,
-          "drill": 0.3
+          "diameter": 0.4572,
+          "drill": 0.254
         }
       ],
       "via_stack_presets": [],
@@ -1220,7 +1219,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -1238,14 +1237,14 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.127,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.127,
-        "diff_pair_width": 0.1357,
+        "diff_pair_width": 0.186,
         "name": "DFRAM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.186,
+        "track_width": 0.224,
         "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.3
@@ -1265,14 +1264,14 @@
         "tuning_profile": ""
       },
       {
-        "clearance": 0.127,
+        "clearance": 0.1016,
         "diff_pair_gap": 0.127,
-        "diff_pair_width": 0.1357,
+        "diff_pair_width": 0.186,
         "name": "SERAM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.186,
+        "track_width": 0.224,
         "tuning_profile": "SERAM",
         "via_diameter": 0.5,
         "via_drill": 0.3
@@ -1621,7 +1620,7 @@
         "uuid": "dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
       }
     ],
-    "used_designators": "#PWR1-426,#PWR433-471,BT1,C1-236,C240-259,D1-44,D48-67,FB1,IC1-9,J1-18,JP1-5,L1-21,Q1-12,R1-114,R117-124,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,Y1-2",
+    "used_designators": "#PWR1-426,#PWR433-463,BT1,C1-236,C240-259,D1-44,D48-67,FB1,IC1-9,J1-18,JP1-5,L1-21,Q1-12,R1-114,R117-120,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,Y1-2",
     "variants": []
   },
   "sheets": [
@@ -1683,7 +1682,7 @@
     ],
     [
       "1a8753c9-42b5-45cc-b3a1-f5d8902546d7",
-      "QWERTY"
+      "KEYSW"
     ],
     [
       "b73f564e-6554-4946-969e-97fc6c45f3e0",
@@ -1704,6 +1703,18 @@
     [
       "897b6517-8c7c-4655-8ae7-b45094bb04be",
       "Module 4"
+    ],
+    [
+      "83d5af6b-7b5d-4627-be3a-3c6e73a5af1b",
+      "FPGA Storage"
+    ],
+    [
+      "cc5b9cb3-f43a-4eef-8b0d-d3e746eff0a8",
+      "FPGA USB"
+    ],
+    [
+      "89378dae-ed42-4872-8158-e756cc8253bd",
+      "FPGA ETHER"
     ]
   ],
   "text_variables": {},

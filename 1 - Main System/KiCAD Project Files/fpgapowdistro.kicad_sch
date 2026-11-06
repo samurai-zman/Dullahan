@@ -7660,6 +7660,12 @@
 		(uuid "d7e18201-d45c-41a6-b6b3-604e997cbc28")
 	)
 	(junction
+		(at 82.55 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0253f9a9-45ee-478a-8142-bc681fdbd506")
+	)
+	(junction
 		(at 99.06 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7732,7 +7738,7 @@
 		(uuid "28c97ae4-898b-4201-a4be-0adc8d7ab73e")
 	)
 	(junction
-		(at 60.96 43.18)
+		(at 76.2 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2aa45263-1ff7-4d0b-bb4a-b39a91c27d13")
@@ -7858,7 +7864,7 @@
 		(uuid "7ed225f6-dd0f-4a3d-9a9e-acfe594270a8")
 	)
 	(junction
-		(at 72.39 43.18)
+		(at 87.63 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f49e776-6c71-4a6c-bf2a-b004114fdbe8")
@@ -7874,6 +7880,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9774cd82-554a-4724-bab6-08b4264b8a91")
+	)
+	(junction
+		(at 69.85 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "984e41bb-2011-4a8a-9a2c-75234c68df4b")
 	)
 	(junction
 		(at 219.71 53.34)
@@ -7930,22 +7942,10 @@
 		(uuid "ba511e9e-b908-4e96-b0c3-72ee124b6742")
 	)
 	(junction
-		(at 44.45 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1774646-ed40-435f-9c6f-383bfc3116db")
-	)
-	(junction
 		(at 219.71 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca6ff054-d391-46ba-8c56-03950060050e")
-	)
-	(junction
-		(at 44.45 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ce15a5e0-bbd3-492c-9318-a76bcc4e9279")
 	)
 	(junction
 		(at 234.95 63.5)
@@ -7996,6 +7996,12 @@
 		(uuid "e36156f4-6ba4-432c-b116-79f7d4560d64")
 	)
 	(junction
+		(at 69.85 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4497f41-b62d-477b-bb61-2cf415e265d8")
+	)
+	(junction
 		(at 133.35 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8014,7 +8020,7 @@
 		(uuid "e6f28d50-b0c2-4159-a89b-88bd3f8113f1")
 	)
 	(junction
-		(at 80.01 140.97)
+		(at 78.74 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f55574a2-ad4d-42a6-96f3-444f52fe8b77")
@@ -8054,16 +8060,6 @@
 			(type default)
 		)
 		(uuid "01c3629d-935d-4e45-b633-fe54023e3bf8")
-	)
-	(wire
-		(pts
-			(xy 30.48 140.97) (xy 44.45 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0788602f-e9f2-4129-bde3-c7daac71dff4")
 	)
 	(wire
 		(pts
@@ -8297,13 +8293,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 140.97) (xy 44.45 140.97)
+			(xy 87.63 46.99) (xy 87.63 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53477c48-db2b-4526-a75e-be390876586b")
+		(uuid "4f3bd3d6-e678-4547-b43f-b8310b69fe9c")
 	)
 	(wire
 		(pts
@@ -8364,6 +8360,16 @@
 			(type default)
 		)
 		(uuid "5de7155b-ca8a-4afd-9b5b-34a10aeb508f")
+	)
+	(wire
+		(pts
+			(xy 76.2 46.99) (xy 76.2 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "639bc2ef-7216-4aea-89c9-ae214745bde4")
 	)
 	(wire
 		(pts
@@ -8447,6 +8453,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 140.97) (xy 99.06 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c4787e-4cf4-4b9e-8d7f-0a7c530da628")
+	)
+	(wire
+		(pts
 			(xy 194.31 43.18) (xy 194.31 45.72)
 		)
 		(stroke
@@ -8467,6 +8483,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 43.18) (xy 69.85 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8224118b-2b00-43a8-817e-c99345320c81")
+	)
+	(wire
+		(pts
 			(xy 120.65 63.5) (xy 137.16 63.5)
 		)
 		(stroke
@@ -8484,16 +8510,6 @@
 			(type default)
 		)
 		(uuid "833ca5df-f4d4-4c4c-902a-bd03482c91e9")
-	)
-	(wire
-		(pts
-			(xy 44.45 140.97) (xy 44.45 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c9edd06-42ae-4cc0-846f-22547e5cd1dd")
 	)
 	(wire
 		(pts
@@ -8564,16 +8580,6 @@
 			(type default)
 		)
 		(uuid "99bcfca7-7fbb-4dbe-b700-075806a381d8")
-	)
-	(wire
-		(pts
-			(xy 99.06 140.97) (xy 80.01 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b0da978-4d3d-4afd-b4e6-859a4b011b71")
 	)
 	(wire
 		(pts
@@ -8687,16 +8693,6 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 43.18) (xy 72.39 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af87b158-8e9a-479e-b2bd-6a85118112fd")
-	)
-	(wire
-		(pts
 			(xy 120.65 82.55) (xy 107.95 82.55)
 		)
 		(stroke
@@ -8704,6 +8700,16 @@
 			(type default)
 		)
 		(uuid "b3a1a666-e36c-45f9-938d-b7cd5f782c37")
+	)
+	(wire
+		(pts
+			(xy 82.55 140.97) (xy 82.55 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9ac2818-ab06-4664-9c6f-83ddaf6f0a8b")
 	)
 	(wire
 		(pts
@@ -8817,23 +8823,13 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 43.18) (xy 60.96 43.18)
+			(xy 54.61 43.18) (xy 99.06 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ca8e28d6-aaac-4833-af57-414c0ae51eeb")
-	)
-	(wire
-		(pts
-			(xy 72.39 43.18) (xy 99.06 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cba530b2-0f93-4078-97e2-d3954bdc762d")
 	)
 	(wire
 		(pts
@@ -9024,16 +9020,6 @@
 			(type default)
 		)
 		(uuid "ec594a7a-9fae-4291-87ba-eb6806ffbdfd")
-	)
-	(wire
-		(pts
-			(xy 82.55 154.94) (xy 44.45 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecbff259-d5ef-42d4-b994-aa8d8b3d8c35")
 	)
 	(wire
 		(pts
@@ -9292,17 +9278,6 @@
 			(justify left)
 		)
 		(uuid "eda8e104-09c4-4eaf-8987-cb20102f5b56")
-	)
-	(hierarchical_label "VIN"
-		(shape input)
-		(at 30.48 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fb8e8f5d-2b17-4e75-ae24-84653b52a12e")
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Coil:1.0uH_0805_1.45A")
@@ -10262,7 +10237,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 60.96 48.26 0)
+		(at 76.2 52.07 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10273,7 +10248,7 @@
 		(dnp no)
 		(uuid "0a122278-115a-4fe8-9b9a-38b5d10c7ad9")
 		(property "Reference" "#PWR039"
-			(at 60.96 54.61 0)
+			(at 76.2 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10284,7 +10259,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 60.96 52.324 0)
+			(at 76.2 56.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10294,7 +10269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 48.26 0)
+			(at 76.2 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10305,7 +10280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 48.26 0)
+			(at 76.2 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10316,7 +10291,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 60.96 48.26 0)
+			(at 76.2 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10340,7 +10315,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 80.01 148.59 0)
+		(at 78.74 148.59 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -10351,7 +10326,7 @@
 		(dnp no)
 		(uuid "0d12fe99-08ba-47b6-94f1-9fe6b202b1a3")
 		(property "Reference" "#PWR0470"
-			(at 80.01 154.94 0)
+			(at 78.74 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10362,7 +10337,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 80.264 152.4 0)
+			(at 78.994 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10372,7 +10347,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 148.59 0)
+			(at 78.74 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10383,7 +10358,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 148.59 0)
+			(at 78.74 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10394,7 +10369,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 80.01 148.59 0)
+			(at 78.74 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13898,7 +13873,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 72.39 48.26 0)
+		(at 87.63 52.07 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -13909,7 +13884,7 @@
 		(dnp no)
 		(uuid "6885f806-ec99-47bc-9892-91116634430d")
 		(property "Reference" "#PWR037"
-			(at 72.39 54.61 0)
+			(at 87.63 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13920,7 +13895,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 72.39 52.324 0)
+			(at 87.63 56.134 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13930,7 +13905,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 48.26 0)
+			(at 87.63 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13941,7 +13916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 48.26 0)
+			(at 87.63 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13952,7 +13927,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 72.39 48.26 0)
+			(at 87.63 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15778,7 +15753,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:2.2uF_0805_25V_20%")
-		(at 60.96 45.72 0)
+		(at 76.2 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15789,7 +15764,7 @@
 		(fields_autoplaced yes)
 		(uuid "90e241eb-82cf-41e1-acdb-a7fbfdc2975f")
 		(property "Reference" "C25"
-			(at 63.5 41.9162 0)
+			(at 78.74 45.7262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15800,7 +15775,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 63.5 44.4562 0)
+			(at 78.74 48.2662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15811,7 +15786,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0805_2012Metric"
-			(at 60.96 57.15 0)
+			(at 76.2 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15822,7 +15797,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 62.23 62.23 0)
+			(at 77.47 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15833,7 +15808,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 60.96 64.77 0)
+			(at 76.2 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15844,7 +15819,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-11624"
-			(at 59.69 59.69 0)
+			(at 74.93 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15855,7 +15830,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 63.5 46.9962 0)
+			(at 78.74 50.8062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15866,7 +15841,7 @@
 			)
 		)
 		(property "Tolerance" "20%"
-			(at 63.5 49.5362 0)
+			(at 78.74 53.3462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16632,7 +16607,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SparkFun-Capacitor:2.2uF_0805_25V_20%")
-		(at 72.39 45.72 0)
+		(at 87.63 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16643,7 +16618,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac2b0f52-bd02-4369-a69f-5a05bfc3bb0f")
 		(property "Reference" "C22"
-			(at 74.93 41.9162 0)
+			(at 90.17 45.7262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16654,7 +16629,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 74.93 44.4562 0)
+			(at 90.17 48.2662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16665,7 +16640,7 @@
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Capacitor:C_0805_2012Metric"
-			(at 72.39 57.15 0)
+			(at 87.63 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16676,7 +16651,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 73.66 62.23 0)
+			(at 88.9 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16687,7 +16662,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 72.39 64.77 0)
+			(at 87.63 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16698,7 +16673,7 @@
 			)
 		)
 		(property "PROD_ID" "CAP-11624"
-			(at 71.12 59.69 0)
+			(at 86.36 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16709,7 +16684,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 74.93 46.9962 0)
+			(at 90.17 50.8062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16720,7 +16695,7 @@
 			)
 		)
 		(property "Tolerance" "20%"
-			(at 74.93 49.5362 0)
+			(at 90.17 53.3462 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18871,7 +18846,8 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0402,4.7uF")
-		(at 80.01 144.78 0)
+		(at 78.74 144.78 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18879,10 +18855,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "cf892e76-52fe-44ba-a0f3-b7413d23eeb0")
 		(property "Reference" "C254"
-			(at 82.55 142.2399 0)
+			(at 76.2 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18893,7 +18868,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 82.55 144.78 0)
+			(at 76.2 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18904,7 +18879,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0805"
-			(at 78.232 144.78 90)
+			(at 80.518 144.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18915,7 +18890,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A475MP5NRNC_C23733.pdf"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18926,7 +18901,7 @@
 			)
 		)
 		(property "Description" "10V 4.7uF X5R ±20% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18937,7 +18912,7 @@
 			)
 		)
 		(property "LCSC" "C23733"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18948,7 +18923,7 @@
 			)
 		)
 		(property "Stock" "4366811"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18959,7 +18934,7 @@
 			)
 		)
 		(property "Price" "0.008USD"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18970,7 +18945,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18981,7 +18956,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18992,7 +18967,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19003,7 +18978,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19014,7 +18989,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19025,7 +19000,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19036,7 +19011,7 @@
 			)
 		)
 		(property "Part" "CL05A475MP5NRNC"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19047,7 +19022,7 @@
 			)
 		)
 		(property "Voltage Rated" "10V"
-			(at 82.55 147.32 0)
+			(at 76.2 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19058,7 +19033,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19069,7 +19044,7 @@
 			)
 		)
 		(property "Capacitance" "4.7uF"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19080,7 +19055,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 80.01 144.78 0)
+			(at 78.74 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19270,7 +19245,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0805,22uF")
-		(at 44.45 158.75 0)
+		(at 69.85 144.78 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -19279,10 +19254,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e787066e-0bb1-48b5-93f5-bc06b2cb2042")
 		(property "Reference" "C253"
-			(at 41.91 156.2099 0)
+			(at 67.31 142.2399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19293,7 +19267,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 41.91 158.75 0)
+			(at 67.31 144.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19304,7 +19278,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0805"
-			(at 46.228 158.75 90)
+			(at 71.628 144.78 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19315,7 +19289,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.pdf"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19326,7 +19300,7 @@
 			)
 		)
 		(property "Description" "25V 22uF X5R ±20% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19337,7 +19311,7 @@
 			)
 		)
 		(property "LCSC" "C45783"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19348,7 +19322,7 @@
 			)
 		)
 		(property "Stock" "6479946"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19359,7 +19333,7 @@
 			)
 		)
 		(property "Price" "0.027USD"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19370,7 +19344,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19381,7 +19355,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19392,7 +19366,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19403,7 +19377,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19414,7 +19388,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19425,7 +19399,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19436,7 +19410,7 @@
 			)
 		)
 		(property "Part" "CL21A226MAQNNNE"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19447,7 +19421,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 41.91 161.29 0)
+			(at 67.31 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19458,7 +19432,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19469,7 +19443,7 @@
 			)
 		)
 		(property "Capacitance" "22uF"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19480,7 +19454,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 44.45 158.75 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20895,7 +20869,8 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 44.45 162.56 0)
+		(at 69.85 148.59 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20905,7 +20880,7 @@
 		(dnp no)
 		(uuid "fa9d17e4-d924-4725-8dca-961b89d998dc")
 		(property "Reference" "#PWR0469"
-			(at 44.45 168.91 0)
+			(at 69.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20916,7 +20891,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 44.196 166.37 0)
+			(at 70.104 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20926,7 +20901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 162.56 0)
+			(at 69.85 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20937,7 +20912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 162.56 0)
+			(at 69.85 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20948,7 +20923,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 44.45 162.56 0)
+			(at 69.85 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

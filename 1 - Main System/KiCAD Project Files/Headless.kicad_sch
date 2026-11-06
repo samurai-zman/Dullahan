@@ -362,6 +362,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 149.86) (xy 107.95 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19ce97ee-7908-4651-9dab-a8173d30128c")
+	)
+	(wire
+		(pts
 			(xy 133.35 116.84) (xy 135.89 116.84)
 		)
 		(stroke
@@ -662,6 +672,16 @@
 			(color 204 102 0 1)
 		)
 		(uuid "6fc00217-e40f-4608-879c-3ae9d8b9570b")
+	)
+	(wire
+		(pts
+			(xy 87.63 152.4) (xy 107.95 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70cdda77-df0c-4f89-a181-97d81dd059bb")
 	)
 	(wire
 		(pts
@@ -1189,6 +1209,36 @@
 				(justify left)
 			)
 		)
+		(pin "MODULE_IO[0..60]" bidirectional
+			(at 147.32 132.08 0)
+			(uuid "011d804e-5882-4992-acd4-62148e26493d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+0V675" input
+			(at 107.95 152.4 180)
+			(uuid "71fbf8ae-e08b-46f3-85dd-30ab38e87c27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+0V675_REF" input
+			(at 107.95 149.86 180)
+			(uuid "fb94d8f3-f54c-46d4-b7bc-8709bb4e8d5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Headless"
 				(path "/dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
@@ -1613,6 +1663,46 @@
 				(justify left top)
 			)
 		)
+		(pin "MODULE_SOCKETED" output
+			(at 242.57 31.75 180)
+			(uuid "668176f3-37d1-4b27-9c9c-80eeff5bad0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V0" output
+			(at 242.57 29.21 180)
+			(uuid "86a80a9c-9f45-4d1f-89f9-a079ba1c73be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" input
+			(at 242.57 26.67 180)
+			(uuid "f4b9b1b8-ef82-4176-84f0-e82d2701bf23")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MODULE_IO[0..60]" bidirectional
+			(at 242.57 36.83 180)
+			(uuid "da8b0d68-ff54-46d3-b010-20c9378da505")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Headless"
 				(path "/dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
@@ -1901,7 +1991,7 @@
 				(justify left top)
 			)
 		)
-		(pin "DN" output
+		(pin "DN" input
 			(at 54.61 29.21 0)
 			(uuid "71210671-7336-4544-bc7a-f26e9f9d5c64")
 			(effects
@@ -1911,7 +2001,7 @@
 				(justify right)
 			)
 		)
-		(pin "DP" output
+		(pin "DP" input
 			(at 54.61 31.75 0)
 			(uuid "82414ccb-9bbf-4ff9-9a45-e35278f9adaa")
 			(effects
