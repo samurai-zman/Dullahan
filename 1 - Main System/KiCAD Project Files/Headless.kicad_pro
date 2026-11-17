@@ -1277,11 +1277,19 @@
         "via_drill": 0.3
       },
       {
+        "clearance": 0.127,
+        "diff_pair_gap": 0.127,
+        "diff_pair_width": 0.3556,
+        "microvia_diameter": 0.45,
+        "microvia_drill": 0.3,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "track_width": 0.3556,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -1335,6 +1343,18 @@
       ],
       "/FPGA/FPGA DDR/DDR_A9": [
         "SERAM"
+      ],
+      "/FPGA/FPGA USB/HSDN": [
+        "USB"
+      ],
+      "/FPGA/FPGA USB/HSDP": [
+        "USB"
+      ],
+      "/JTAG&Monitor/USB_DN": [
+        "USB"
+      ],
+      "/JTAG&Monitor/USB_DP": [
+        "USB"
       ],
       "/Module Monitoring/I3_M1": [
         "ADC_LN"
@@ -1457,7 +1477,12 @@
         "SERAM"
       ]
     },
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "USB",
+        "pattern": "USB"
+      }
+    ]
   },
   "pcbnew": {
     "find_by_properties": {
@@ -1620,7 +1645,7 @@
         "uuid": "dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
       }
     ],
-    "used_designators": "#PWR1-426,#PWR433-463,BT1,C1-236,C240-259,D1-44,D48-67,FB1,IC1-9,J1-18,JP1-5,L1-21,Q1-12,R1-114,R117-120,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,Y1-2",
+    "used_designators": "#PWR1-426,#PWR429,#PWR431-463,#PWR482-483,#PWR485-487,#PWR523-528,#PWR533,#PWR535,#PWR565-566,BT1,C1-236,C239-259,C270-271,C285-286,D1-44,D48-67,FB1,IC1-9,IC13,J1-18,JP1-5,L1-21,Q1-12,R1-114,R116-120,R141,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,U42,Y1-2",
     "variants": []
   },
   "sheets": [
