@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -12,6 +12,7 @@
     "net_color_mode": 1,
     "opacity": {
       "images": 0.6,
+      "outside_group": 1.0,
       "pads": 1.0,
       "shapes": 1.0,
       "tracks": 1.0,
@@ -20,18 +21,18 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": true,
-      "footprints": true,
-      "graphics": true,
-      "gridItems": true,
-      "keepouts": true,
+      "dimensions": false,
+      "footprints": false,
+      "graphics": false,
+      "gridItems": false,
+      "keepouts": false,
       "lockedItems": false,
-      "otherItems": true,
-      "pads": true,
-      "text": true,
+      "otherItems": false,
+      "pads": false,
+      "text": false,
       "tracks": true,
-      "vias": true,
-      "zones": true
+      "vias": false,
+      "zones": false
     },
     "visible_items": [
       "vias",
@@ -57,10 +58,9 @@
       "board_outline_area",
       "ly_points",
       "constraint_shadows",
-      "grid_items",
       "via_stitching"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "visible_layers": "00000000_00000000_00000000_a200a5ff",
     "zone_display_mode": 0
   },
   "git": {
@@ -147,7 +147,32 @@
   },
   "open_jobsets": [],
   "project": {
-    "files": []
+    "files": [
+      {
+        "name": "Headless.kicad_pcb",
+        "open": false,
+        "window": {
+          "display": 1,
+          "maximized": true,
+          "pos_x": -8,
+          "pos_y": -8,
+          "size_x": 1936,
+          "size_y": 1048
+        }
+      },
+      {
+        "name": "Headless.kicad_sch",
+        "open": true,
+        "window": {
+          "display": 0,
+          "maximized": true,
+          "pos_x": -1928,
+          "pos_y": -8,
+          "size_x": 1936,
+          "size_y": 1048
+        }
+      }
+    ]
   },
   "schematic": {
     "hierarchy_collapsed": [],
@@ -155,7 +180,7 @@
       "graphics": true,
       "images": true,
       "labels": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pins": true,
       "ruleAreas": true,

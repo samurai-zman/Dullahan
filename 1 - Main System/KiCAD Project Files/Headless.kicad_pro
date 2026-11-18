@@ -725,7 +725,7 @@
           "min_island_area": 9.9999993548,
           "min_thickness": 0.25,
           "pad_connection": 1,
-          "remove_islands": 0,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
         }
@@ -737,19 +737,19 @@
           "width": 0.0
         },
         {
-          "gap": 0.127,
-          "via_gap": 0.127,
-          "width": 0.186
+          "gap": 0.267,
+          "via_gap": 0.267,
+          "width": 0.127
         },
         {
-          "gap": 0.5,
-          "via_gap": 0.5,
-          "width": 0.7
+          "gap": 0.127,
+          "via_gap": 0.127,
+          "width": 0.194
         }
       ],
       "drc_exclusions": [],
       "meta": {
-        "version": 3
+        "version": 4
       },
       "rule_severities": {
         "annular_width": "error",
@@ -757,6 +757,7 @@
         "clearance": "error",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
+        "copper_outside_board": "warning",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
@@ -771,6 +772,7 @@
         "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
+        "hole_aspect_ratio": "error",
         "hole_clearance": "error",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -781,11 +783,13 @@
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
+        "line_width": "warning",
         "malformed_courtyard": "error",
         "malformed_microvia_stack_span": "error",
         "microvia_aspect_ratio": "error",
         "microvia_crosses_core": "warning",
         "microvia_drill_out_of_range": "error",
+        "microvia_spans_dielectrics": "warning",
         "microvia_stack_depth": "error",
         "microvia_stack_not_filled": "warning",
         "mirrored_text_on_front_layer": "warning",
@@ -838,6 +842,7 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_silk_line_width": 0.08,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.254,
@@ -903,10 +908,10 @@
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
-          "corner_radius_percentage": 80,
+          "corner_radius_percentage": 90,
           "corner_style": 1,
-          "max_amplitude": 1.0,
-          "min_amplitude": 0.2,
+          "max_amplitude": 100.0,
+          "min_amplitude": 1.0,
           "single_sided": false,
           "spacing": 1.0
         },
@@ -944,8 +949,19 @@
       "via_stack_presets": [],
       "zones_allow_external_fillets": false
     },
+    "idf_export": {
+      "calculate_height_from_models": true,
+      "include_dnp": true,
+      "include_unspecified": true,
+      "origin_mode": 2,
+      "part_number_field": "Value",
+      "units": 0,
+      "user_origin_x": 0.0,
+      "user_origin_y": 0.0
+    },
     "ipc2581": {
       "bom_rev": "",
+      "custom_sections": false,
       "dist": "",
       "distpn": "",
       "internal_id": "",
@@ -957,7 +973,23 @@
       "sch_revision": "",
       "sections": ""
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 8,
+        "enabled": true,
+        "topLayer": 6
+      },
+      {
+        "bottomLayer": 10,
+        "enabled": true,
+        "topLayer": 4
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -1158,7 +1190,9 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "duplicate_sheet_suffix": "error",
       "empty_label_name": "error",
+      "empty_power_value": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "field_name_whitespace": "warning",
@@ -1188,6 +1222,7 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "ref_suffix_mismatch": "warning",
       "same_local_global_label": "warning",
       "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
@@ -1203,7 +1238,8 @@
       "unresolved_variable": "error",
       "variant_symbol_incompatible": "warning",
       "variant_symbol_invalid": "error",
-      "wire_dangling": "error"
+      "wire_dangling": "error",
+      "wired_implicit_power": "warning"
     }
   },
   "libraries": {
@@ -1213,7 +1249,7 @@
   },
   "meta": {
     "filename": "Headless.kicad_pro",
-    "version": 3
+    "version": 4
   },
   "net_settings": {
     "classes": [
@@ -1232,28 +1268,28 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
         "tuning_profile": "",
-        "via_diameter": 0.4572,
-        "via_drill": 0.254,
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032,
         "wire_width": 6
       },
       {
         "clearance": 0.1016,
         "diff_pair_gap": 0.127,
-        "diff_pair_width": 0.186,
+        "diff_pair_width": 0.194,
         "name": "DFRAM",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "pcb_color": "rgb(255, 255, 0)",
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.224,
-        "tuning_profile": "",
-        "via_diameter": 0.5,
-        "via_drill": 0.3
+        "track_width": 0.194,
+        "tuning_profile": "DFRAM",
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032
       },
       {
         "clearance": 0.1016,
         "name": "POW",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
@@ -1261,7 +1297,7 @@
         "clearance": 0.1016,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
@@ -1270,13 +1306,39 @@
         "diff_pair_gap": 0.127,
         "diff_pair_width": 0.186,
         "name": "SERAM",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 255)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.165,
+        "tuning_profile": "RAM",
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032
+      },
+      {
+        "clearance": 0.1016,
+        "diff_pair_gap": 0.127,
+        "diff_pair_width": 0.186,
+        "name": "SERAM1",
+        "pcb_color": "rgb(0, 255, 0)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.224,
-        "tuning_profile": "SERAM",
-        "via_diameter": 0.5,
-        "via_drill": 0.3
+        "track_width": 0.165,
+        "tuning_profile": "RAM",
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032
+      },
+      {
+        "clearance": 0.1016,
+        "diff_pair_gap": 0.127,
+        "diff_pair_width": 0.186,
+        "name": "SERAM2",
+        "pcb_color": "rgb(0, 255, 255)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.165,
+        "tuning_profile": "RAM",
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032
       },
       {
         "clearance": 0.1016,
@@ -1285,13 +1347,13 @@
         "microvia_diameter": 0.45,
         "microvia_drill": 0.3,
         "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "pcb_color": "rgb(0, 0, 194)",
+        "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3556,
         "tuning_profile": "",
-        "via_diameter": 0.45,
-        "via_drill": 0.3
+        "via_diameter": 0.4064,
+        "via_drill": 0.2032
       }
     ],
     "meta": {
@@ -1301,6 +1363,104 @@
     "net_chain_netclasses": {},
     "net_colors": {},
     "netclass_assignments": {
+      "/FPGA/FPGA DDR/DDR1_DQL0": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL1": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL2": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL3": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL4": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL5": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL6": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQL7": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU0": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU1": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU2": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU3": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU4": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU5": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU6": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR1_DQU7": [
+        "SERAM1"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL0": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL1": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL2": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL3": [
+        "SERAM",
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL4": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL5": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL6": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQL7": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU0": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU1": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU2": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU3": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU4": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU5": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU6": [
+        "SERAM2"
+      ],
+      "/FPGA/FPGA DDR/DDR2_DQU7": [
+        "SERAM",
+        "SERAM2"
+      ],
       "/FPGA/FPGA DDR/DDR_A0": [
         "SERAM"
       ],
@@ -1346,6 +1506,24 @@
       "/FPGA/FPGA DDR/DDR_A9": [
         "SERAM"
       ],
+      "/FPGA/FPGA DDR/DDR_CKN": [
+        "DFRAM"
+      ],
+      "/FPGA/FPGA DDR/DDR_CKP": [
+        "DFRAM"
+      ],
+      "/FPGA/FPGA DDR/DQSL_N": [
+        "DFRAM"
+      ],
+      "/FPGA/FPGA DDR/DQSL_P": [
+        "DFRAM"
+      ],
+      "/FPGA/FPGA DDR/DQSU_N": [
+        "DFRAM"
+      ],
+      "/FPGA/FPGA DDR/DQSU_P": [
+        "DFRAM"
+      ],
       "/FPGA/FPGA USB/HSDN": [
         "USB"
       ],
@@ -1381,108 +1559,24 @@
       ],
       "/Module Monitoring/I5_M4": [
         "ADC_LN"
-      ],
-      "Net-(IC8-DQL0)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL1)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL2)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL3)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL4)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL5)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL6)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQL7)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU0)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU1)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU2)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU3)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU4)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU5)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU6)": [
-        "SERAM"
-      ],
-      "Net-(IC8-DQU7)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL0)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL1)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL2)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL3)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL4)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL5)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL6)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQL7)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU0)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU1)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU2)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU3)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU4)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU5)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU6)": [
-        "SERAM"
-      ],
-      "Net-(IC9-DQU7)": [
-        "SERAM"
       ]
     },
     "netclass_patterns": [
       {
         "netclass": "USB",
         "pattern": "USB"
+      },
+      {
+        "netclass": "SERAM1",
+        "pattern": "SERAM1"
+      },
+      {
+        "netclass": "SERAM2",
+        "pattern": "SERAM2"
+      },
+      {
+        "netclass": "DFRAM",
+        "pattern": "DFRAM"
       }
     ]
   },
@@ -1503,7 +1597,9 @@
   "schematic": {
     "annotate_start_num": 0,
     "annotation": {
+      "increment_pasted_suffix": true,
       "method": 0,
+      "reused_sheet_suffixes": false,
       "sort_order": 0
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
@@ -1591,7 +1687,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": {},
+    "bus_aliases": null,
     "compare_symbols": {
       "dnp_flags": false,
       "exclude_from_board_flags": true,
@@ -1634,6 +1730,15 @@
     "legacy_lib_list": [],
     "meta": {
       "version": 1
+    },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "options": {},
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -1756,14 +1861,22 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "B.Cu",
-            "delay": 5129600,
+            "delay": 6336400,
             "diff_pair_gap": 0,
-            "signal_layer": "B.Cu",
+            "signal_layer": "In2.Cu",
             "top_reference_layer": "F.Cu",
-            "width": 224000
+            "width": 186000
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 6336400,
+            "diff_pair_gap": 0,
+            "signal_layer": "In3.Cu",
+            "top_reference_layer": "F.Cu",
+            "width": 186000
           }
         ],
-        "model_solder_mask": true,
+        "model_solder_mask": false,
         "net_chain_bridge_prop_delay": 0,
         "profile_name": "RAM",
         "target_impedance": 50.0,
@@ -1784,20 +1897,36 @@
         "frequency": 1000000000.0,
         "layer_entries": [
           {
-            "bottom_reference_layer": "B.Cu",
-            "delay": 5081400,
-            "diff_pair_gap": 127000,
+            "bottom_reference_layer": "In4.Cu",
+            "delay": 5100700,
+            "diff_pair_gap": 63634,
             "signal_layer": "F.Cu",
+            "top_reference_layer": "In1.Cu",
+            "width": 193997
+          },
+          {
+            "bottom_reference_layer": "B.Cu",
+            "delay": 5081700,
+            "diff_pair_gap": 127000,
+            "signal_layer": "B.Cu",
             "top_reference_layer": "F.Cu",
-            "width": 186000
+            "width": 194000
           }
         ],
-        "model_solder_mask": true,
+        "model_solder_mask": false,
         "net_chain_bridge_prop_delay": 0,
         "profile_name": "DFRAM",
-        "target_impedance": 90.0,
+        "target_impedance": 100.0,
         "type": 1,
-        "via_overrides": [],
+        "via_overrides": [
+          {
+            "delay": 0,
+            "signal_layer_from": "F.Cu",
+            "signal_layer_to": "B.Cu",
+            "via_layer_from": "F.Cu",
+            "via_layer_to": "B.Cu"
+          }
+        ],
         "via_prop_delay": 0
       }
     ]
