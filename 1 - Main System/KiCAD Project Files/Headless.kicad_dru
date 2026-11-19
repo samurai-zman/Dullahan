@@ -1,0 +1,7 @@
+(version 2)
+(rule "Differential pair routing 1"
+	(constraint track_width (min 0.067mm) (opt 0.194mm) (max 0.321mm))
+	(constraint diff_pair_gap (min 0.027mm) (opt 0.127mm) (max 0.227mm))
+	(constraint diff_pair_uncoupled (max 2mm))
+	(condition "A.hasNetclass('DFRAM')")
+)

@@ -834,10 +834,10 @@
         "max_error": 0.005,
         "min_clearance": 0.1016,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.127,
+        "min_copper_edge_clearance": 0.1016,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.127,
-        "min_hole_to_hole": 0.127,
+        "min_hole_clearance": 0.1016,
+        "min_hole_to_hole": 0.1016,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -845,12 +845,12 @@
         "min_silk_line_width": 0.08,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.254,
-        "min_track_width": 0.127,
+        "min_through_hole_diameter": 0.203,
+        "min_track_width": 0.1016,
         "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.1,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
-        "use_height_for_length_calcs": true
+        "use_height_for_length_calcs": false
       },
       "teardrop_options": [
         {
@@ -902,16 +902,17 @@
       "track_widths": [
         0.0,
         0.127,
+        0.194,
         0.2,
         0.224,
         0.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
-          "corner_radius_percentage": 90,
-          "corner_style": 1,
+          "corner_radius_percentage": 80,
+          "corner_style": 0,
           "max_amplitude": 100.0,
-          "min_amplitude": 1.0,
+          "min_amplitude": 0.2,
           "single_sided": false,
           "spacing": 1.0
         },
@@ -1563,8 +1564,8 @@
     },
     "netclass_patterns": [
       {
-        "netclass": "USB",
-        "pattern": "USB"
+        "netclass": "DFRAM",
+        "pattern": "DFRAM"
       },
       {
         "netclass": "SERAM1",
@@ -1575,8 +1576,12 @@
         "pattern": "SERAM2"
       },
       {
-        "netclass": "DFRAM",
-        "pattern": "DFRAM"
+        "netclass": "USB",
+        "pattern": "USB"
+      },
+      {
+        "netclass": "SERAM",
+        "pattern": "SERAM"
       }
     ]
   },
@@ -1687,7 +1692,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
-    "bus_aliases": null,
+    "bus_aliases": {},
     "compare_symbols": {
       "dnp_flags": false,
       "exclude_from_board_flags": true,
@@ -1738,7 +1743,7 @@
       },
       "model_mode": 4,
       "options": {},
-      "workbook_filename": ""
+      "workbook_filename": "Headless.wbk"
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -1752,7 +1757,7 @@
         "uuid": "dda7fa2c-5331-4d8a-8b2b-3a472ca3df91"
       }
     ],
-    "used_designators": "#PWR1-426,#PWR429,#PWR431-463,#PWR482-483,#PWR485-487,#PWR523-529,#PWR533,#PWR535,#PWR565-566,BT1,C1-236,C239-259,C270-271,C285-286,D1-44,D48-67,FB1,IC1-9,IC13,J1-18,JP1-5,L1-21,Q1-12,R1-114,R116-120,R141,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,U42,Y1-2",
+    "used_designators": "#PWR1-426,#PWR429,#PWR431-463,#PWR482-483,#PWR485-487,#PWR490,#PWR523-529,#PWR533,#PWR535,#PWR565-566,BT1,C1-236,C239-259,C270-271,C285-286,D1-44,D48-67,FB1,IC1-9,IC13,J1-18,JP1-5,L1-21,Q1-12,R1-114,R116-120,R127-135,R141,R145-151,RV1-4,S1-3,S5-30,S36-55,SW1-2,TH1-2,TP1-7,U1-39,U42,Y1-2",
     "variants": []
   },
   "sheets": [
@@ -1860,20 +1865,20 @@
         "frequency": 1000000000.0,
         "layer_entries": [
           {
-            "bottom_reference_layer": "B.Cu",
-            "delay": 6336400,
+            "bottom_reference_layer": "In4.Cu",
+            "delay": 6398400,
             "diff_pair_gap": 0,
             "signal_layer": "In2.Cu",
-            "top_reference_layer": "F.Cu",
-            "width": 186000
+            "top_reference_layer": "In1.Cu",
+            "width": 165000
           },
           {
-            "bottom_reference_layer": "B.Cu",
-            "delay": 6336400,
+            "bottom_reference_layer": "In4.Cu",
+            "delay": 6398400,
             "diff_pair_gap": 0,
             "signal_layer": "In3.Cu",
-            "top_reference_layer": "F.Cu",
-            "width": 186000
+            "top_reference_layer": "In1.Cu",
+            "width": 165000
           }
         ],
         "model_solder_mask": false,
@@ -1898,29 +1903,36 @@
         "layer_entries": [
           {
             "bottom_reference_layer": "In4.Cu",
-            "delay": 5100700,
-            "diff_pair_gap": 63634,
+            "delay": 5101000,
+            "diff_pair_gap": 127000,
             "signal_layer": "F.Cu",
             "top_reference_layer": "In1.Cu",
-            "width": 193997
+            "width": 194000
           },
           {
-            "bottom_reference_layer": "B.Cu",
-            "delay": 5081700,
+            "bottom_reference_layer": "In4.Cu",
+            "delay": 5101000,
             "diff_pair_gap": 127000,
             "signal_layer": "B.Cu",
-            "top_reference_layer": "F.Cu",
+            "top_reference_layer": "In1.Cu",
             "width": 194000
           }
         ],
         "model_solder_mask": false,
         "net_chain_bridge_prop_delay": 0,
         "profile_name": "DFRAM",
-        "target_impedance": 100.0,
+        "target_impedance": 50.0,
         "type": 1,
         "via_overrides": [
           {
-            "delay": 0,
+            "delay": 1000000,
+            "signal_layer_from": "F.Cu",
+            "signal_layer_to": "B.Cu",
+            "via_layer_from": "F.Cu",
+            "via_layer_to": "B.Cu"
+          },
+          {
+            "delay": 1000000,
             "signal_layer_from": "F.Cu",
             "signal_layer_to": "B.Cu",
             "via_layer_from": "F.Cu",

@@ -7639,9 +7639,9 @@
 		)
 		(uuid "1c1cdcfe-1a84-4250-8292-4fde6385084d")
 	)
-	(text "DDR Regulator"
+	(text "DDR Termination Regulator"
 		(exclude_from_sim no)
-		(at 51.308 121.92 0)
+		(at 73.66 120.65 0)
 		(effects
 			(font
 				(size 5.08 5.08)

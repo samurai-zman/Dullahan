@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 6,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -21,18 +21,18 @@
     },
     "prototype_zone_fills": false,
     "selection_filter": {
-      "dimensions": false,
-      "footprints": false,
-      "graphics": false,
-      "gridItems": false,
-      "keepouts": false,
+      "dimensions": true,
+      "footprints": true,
+      "graphics": true,
+      "gridItems": true,
+      "keepouts": true,
       "lockedItems": false,
-      "otherItems": false,
-      "pads": false,
-      "text": false,
+      "otherItems": true,
+      "pads": true,
+      "text": true,
       "tracks": true,
-      "vias": false,
-      "zones": false
+      "vias": true,
+      "zones": true
     },
     "visible_items": [
       "vias",
@@ -60,7 +60,7 @@
       "constraint_shadows",
       "via_stitching"
     ],
-    "visible_layers": "00000000_00000000_00000000_a200a5ff",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -162,14 +162,14 @@
       },
       {
         "name": "Headless.kicad_sch",
-        "open": true,
+        "open": false,
         "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": -1928,
-          "pos_y": -8,
-          "size_x": 1936,
-          "size_y": 1048
+          "display": 1,
+          "maximized": false,
+          "pos_x": 0,
+          "pos_y": 0,
+          "size_x": 1920,
+          "size_y": 1032
         }
       }
     ]
