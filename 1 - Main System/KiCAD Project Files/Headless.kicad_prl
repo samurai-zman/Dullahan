@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 6,
+    "active_layer": 2,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -158,18 +158,6 @@
           "pos_y": -8,
           "size_x": 1936,
           "size_y": 1048
-        }
-      },
-      {
-        "name": "Headless.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 1,
-          "maximized": false,
-          "pos_x": 0,
-          "pos_y": 0,
-          "size_x": 1920,
-          "size_y": 1032
         }
       }
     ]
